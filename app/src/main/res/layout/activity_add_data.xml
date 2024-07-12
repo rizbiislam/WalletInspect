@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddData">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:text="`Add Data"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etamount"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etreason"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Reason"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btninsert"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Insert"
+
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

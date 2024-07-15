@@ -109,4 +109,19 @@ public class Databasehelper extends SQLiteOpenHelper {
         return cursor12;
     }
 
+    public void deleteDataExpense(String id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from expense where id like  +id");
+
+    }
+
+    public void deleteDataIncome(String id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("delete from income where id like  +id");
+
+    }
+
+
 }

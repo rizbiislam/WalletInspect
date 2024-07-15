@@ -61,7 +61,7 @@
                 android:textSize="16sp"/>
 
             <TextView
-                android:id="@+id/tvtotalex"
+                android:id="@+id/tvamounte"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BDT 0.00"
@@ -74,7 +74,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvaddex"
+                    android:id="@+id/tvr"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"

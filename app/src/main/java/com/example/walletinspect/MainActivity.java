@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         tvaddin = findViewById(R.id.tvaddin);
         tvtotalin = findViewById(R.id.tvtotalin);
         tvfinal = findViewById(R.id.tvfinal);
-        tvtotalex = findViewById(R.id.tvtotalex);
-        tvaddex = findViewById(R.id.tvaddex);
+        tvtotalex = findViewById(R.id.tvamounte);
+        tvaddex = findViewById(R.id.tvr);
         tvshoeallex = findViewById(R.id.tvshoeallex);
         dbhelper = new Databasehelper(this);
 
@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Exp = true;
-                startActivity(new Intent(MainActivity.this, ViewActivity.class).putExtra("Exp", Exp));
+                //startActivity(new Intent(MainActivity.this, ViewActivity.class).putExtra("Exp", Exp));
+                startActivity(new Intent(MainActivity.this, ShowData.class).putExtra("Exp", Exp));
             }
         });
 
@@ -61,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Exp = false;
-                startActivity(new Intent(MainActivity.this, ViewActivity.class).putExtra("Exp", Exp));
+                //startActivity(new Intent(MainActivity.this, ViewActivity.class).putExtra("Exp", Exp));
+                startActivity(new Intent(MainActivity.this, ShowData.class).putExtra("Exp", Exp));
             }
         });
 
